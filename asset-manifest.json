@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/interfejsy-graficzne/static/js/main.9a99584e.js",
+    "main.js": "/interfejsy-graficzne/static/js/main.6c8f50be.js",
     "static/js/787.069f0302.chunk.js": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js",
     "static/media/real.png": "/interfejsy-graficzne/static/media/real.55eccf6fe1344eb68db5.png",
     "static/media/sport_connect.jpg": "/interfejsy-graficzne/static/media/sport_connect.3d8332024627fbde2d7b.jpg",
     "index.html": "/interfejsy-graficzne/index.html",
-    "main.9a99584e.js.map": "/interfejsy-graficzne/static/js/main.9a99584e.js.map",
+    "main.6c8f50be.js.map": "/interfejsy-graficzne/static/js/main.6c8f50be.js.map",
     "787.069f0302.chunk.js.map": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9a99584e.js"
+    "static/js/main.6c8f50be.js"
   ]
 }

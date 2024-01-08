@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import theme from "./config/theme";
 import { ThemeProvider } from "@mui/system";
 import { Box, CssBaseline } from "@mui/material";
@@ -12,7 +12,7 @@ const index = ReactDOM.createRoot(document.getElementById("root"));
 index.render(
   <React.StrictMode>
     <SnackbarProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Box
@@ -23,7 +23,7 @@ index.render(
             </Box>
           </Box>
         </ThemeProvider>
-      </BrowserRouter>
+      </HashRouter>
     </SnackbarProvider>
   </React.StrictMode>
 );

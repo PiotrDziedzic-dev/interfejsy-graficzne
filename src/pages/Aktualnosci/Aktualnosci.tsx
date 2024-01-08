@@ -1,3 +1,6 @@
+//@ts-nocheck
+
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Grid,
@@ -6,12 +9,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
-import {
-  AktualnosciPost,
-  AktualnosciSportowe,
-  ForumPostsMocked,
-} from "../../constants/constants";
 import {
   ChatBubbleOutlineOutlined,
   Notifications,
@@ -21,15 +18,80 @@ import {
 } from "@mui/icons-material";
 import PostDetailsWithCommentsDialog from "./../../components/PostDetailsWithCommentDialog/PostDetailsWithCommentsDialog";
 import { useSnackbar } from "notistack";
+import initialData from "./../../database/aktualnosci.json"; // Załaduj dane
+import userData from "./../../database/userProfile.json"; // Załaduj dane
 
 const Forum = () => {
   const { enqueueSnackbar } = useSnackbar();
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [likes, setLikes] = useState<number[]>([]);
-  const [subscribes, setSubscribes] = useState<number[]>([]);
-  const [inspectPost, setInspectPost] = useState<AktualnosciPost>();
+  const [currentPage, setCurrentPage] = useState(1);
+  const [data, setData] = useState([]); // Używamy stanu do przechowywania danych
+  const [inspectPost, setInspectPost] = useState(null);
 
-  const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+  useEffect(() => {
+    // Załaduj dane z localStorage lub, jeśli nie ma, ustaw z pliku JSON
+    const storedData = localStorage.getItem("aktualnosciData");
+    if (storedData) {
+      setData(JSON.parse(storedData));
+    } else {
+      setData(initialData);
+      localStorage.setItem("aktualnosciData", JSON.stringify(initialData));
+    }
+  }, []);
+
+  const [currentUser, setCurrentUser] = useState({ name: "Anonim" });
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("userData");
+    if (storedUser) {
+      setCurrentUser(JSON.parse(storedUser));
+    } else {
+      setCurrentUser(userData);
+      localStorage.setItem("userData", JSON.stringify(userData));
+    }
+  }, []);
+
+  const updateData = (newData) => {
+    setData(newData);
+    localStorage.setItem("aktualnosciData", JSON.stringify(newData));
+  };
+
+  // Funkcja do dodawania komentarza do postu
+  const handleAddComment = (postId, newComment) => {
+    const newData = data.map((post) =>
+      post.id === postId
+        ? { ...post, komentarze: [...post.komentarze, newComment] }
+        : post
+    );
+    updateData(newData); // Aktualizuj dane i localStorage
+  };
+
+  const handleLike = (id) => {
+    const newData = data.map((item) =>
+      item.id === id ? { ...item, liked: !item.liked } : item
+    );
+    updateData(newData);
+    const post = newData.find((item) => item.id === id);
+    enqueueSnackbar(
+      `${post.liked ? "Polubiłeś" : "Cofnięto polubienie"} "${post.title}"`,
+      { variant: "info" }
+    );
+  };
+
+  const handleSubscribe = (id) => {
+    const newData = data.map((item) =>
+      item.id === id ? { ...item, subscribed: !item.subscribed } : item
+    );
+    updateData(newData);
+    const post = newData.find((item) => item.id === id);
+    enqueueSnackbar(
+      `${post.subscribed ? "Zasubskrybowano" : "Odsubskrybowano"} "${
+        post.title
+      }"`,
+      { variant: "info" }
+    );
+  };
+
+  const handleChange = (event, value) => {
     setCurrentPage(value);
   };
 
@@ -53,111 +115,89 @@ const Forum = () => {
       >
         <Stack spacing={2}>
           <Grid container spacing={4}>
-            {AktualnosciSportowe.slice(
-              (currentPage - 1) * 6,
-              currentPage * 6
-            ).map((forumPost, index) => (
-              <Grid item xs={12} sm={10} md={8} lg={6} key={index}>
-                <Stack
-                  spacing={2}
-                  sx={{
-                    border: "2px solid blue",
-                    borderRadius: "8px",
-                    padding: "12px",
-                  }}
-                >
-                  <Typography
-                    variant={"h6"}
-                    color={"primary"}
-                    sx={{ fontWeight: 650 }}
-                  >
-                    {forumPost?.title}
-                  </Typography>
-
-                  <Box sx={{ fontWeight: 550 }}>{forumPost?.category}</Box>
-                  <Box>{forumPost?.text}</Box>
-
-                  <Box
+            {data
+              .slice((currentPage - 1) * 6, currentPage * 6)
+              .map((forumPost) => (
+                <Grid item xs={12} sm={10} md={8} lg={6} key={forumPost.id}>
+                  <Stack
+                    spacing={2}
                     sx={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                      gap: 2,
+                      border: "2px solid blue",
+                      borderRadius: "8px",
+                      padding: "12px",
                     }}
                   >
-                    <IconButton
-                      onClick={() => {
-                        if (likes.includes(forumPost?.id)) {
-                          setLikes((prevState) =>
-                            [...prevState].filter((t) => t !== forumPost?.id)
-                          );
-                        } else {
-                          setLikes((prevState) => [
-                            ...prevState,
-                            forumPost?.id,
-                          ]);
-                        }
+                    <Typography
+                      variant={"h6"}
+                      color={"primary"}
+                      sx={{ fontWeight: 650 }}
+                    >
+                      {forumPost.title}
+                    </Typography>
+
+                    <Box sx={{ fontWeight: 550 }}>{forumPost.category}</Box>
+                    <Box>{forumPost.text}</Box>
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        gap: 2,
                       }}
                     >
-                      {likes.includes(forumPost?.id) ? (
-                        <ThumbUp color={"primary"} />
-                      ) : (
-                        <ThumbUpAltOutlined color={"secondary"} />
-                      )}
-                    </IconButton>
-                    <IconButton onClick={() => setInspectPost(forumPost)}>
-                      <ChatBubbleOutlineOutlined color={"secondary"} />
-                    </IconButton>
-                    <IconButton
-                      onClick={() => {
-                        if (subscribes.includes(forumPost?.id)) {
-                          enqueueSnackbar(
-                            `Odsubskrybowałeś posta o tytuleś ${forumPost?.title}`,
-                            { variant: "info" }
-                          );
-                          setSubscribes((prevState) =>
-                            [...prevState].filter((t) => t !== forumPost?.id)
-                          );
-                        } else {
-                          enqueueSnackbar(
-                            `Zasubskrybowałeś posta o tytule ${forumPost?.title}`,
-                            { variant: "info" }
-                          );
-                          setSubscribes((prevState) => [
-                            ...prevState,
-                            forumPost?.id,
-                          ]);
-                        }
-                      }}
-                    >
-                      {subscribes.includes(forumPost?.id) ? (
-                        <Notifications color={"primary"} />
-                      ) : (
-                        <NotificationsNoneOutlined color={"secondary"} />
-                      )}
-                    </IconButton>
-                  </Box>
-                </Stack>
-              </Grid>
-            ))}
+                      {/* Like Button */}
+                      <IconButton onClick={() => handleLike(forumPost.id)}>
+                        {forumPost.liked ? (
+                          <ThumbUp color={"primary"} />
+                        ) : (
+                          <ThumbUpAltOutlined color={"secondary"} />
+                        )}
+                      </IconButton>
+
+                      {/* Inspect Post Button */}
+                      <IconButton onClick={() => setInspectPost(forumPost)}>
+                        <ChatBubbleOutlineOutlined color={"secondary"} />
+                      </IconButton>
+
+                      {/* Subscribe Button */}
+                      <IconButton onClick={() => handleSubscribe(forumPost.id)}>
+                        {forumPost.subscribed ? (
+                          <Notifications color={"primary"} />
+                        ) : (
+                          <NotificationsNoneOutlined color={"secondary"} />
+                        )}
+                      </IconButton>
+                    </Box>
+                  </Stack>
+                </Grid>
+              ))}
           </Grid>
         </Stack>
+
+        {/* Pagination */}
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Pagination
             page={currentPage}
             onChange={handleChange}
-            count={Math.ceil(AktualnosciSportowe.length / 6)}
+            count={Math.ceil(data.length / 6)}
             variant={"outlined"}
             color={"primary"}
           />
         </Box>
       </Stack>
-      {!!inspectPost?.id && (
+
+      {/* Post Details Dialog */}
+      {inspectPost && (
         <PostDetailsWithCommentsDialog
-          open={!!inspectPost.id}
-          handleClose={() => setInspectPost(undefined)}
-          title={inspectPost?.title}
-          text={inspectPost?.text}
-          category={inspectPost?.category}
+          open={!!inspectPost}
+          handleClose={() => setInspectPost(null)}
+          title={inspectPost.title}
+          text={inspectPost.text}
+          comments={inspectPost.komentarze}
+          onAddComment={(newComment) =>
+            handleAddComment(inspectPost.id, newComment)
+          }
+          currentUser={currentUser} // Przekazanie aktualnego użytkownika do komponentu dialogowego
         />
       )}
     </Box>

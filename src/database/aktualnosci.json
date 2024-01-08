@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "title": "Liverpool zdobywa mistrzostwo Premier League po 30 latach",
+    "text": "Liverpool FC kończy 30-letnią przerwę, zdobywając mistrzostwo Angielskiej Premier League w sezonie 2019/2020.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Jan Kowalski",
+        "content": "Nareszcie! Po 30 latach oczekiwań nasz zespół w końcu wraca na szczyt!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title":
+    "Odwołane Letnie Igrzyska Olimpijskie w Tokio z powodu pandemii COVID-19",
+    "text": "Międzynarodowy Komitet Olimpijski ogłasza odwołanie Letnich Igrzysk Olimpijskich w Tokio z powodu globalnej pandemii COVID-19.",
+    "category": "Igrzyska olimpijskie",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 3,
+    "title": "Lewis Hamilton zdobywa siódme mistrzostwo świata w Formule 1",
+    "text": "Brytyjski kierowca Lewis Hamilton zdobywa siódme mistrzostwo świata w Formule 1, wyrównując rekord Michaela Schumachera.",
+    "category": "Formuła 1",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 4,
+    "title": "NBA zawiesza sezon z powodu protestów społecznych",
+    "text": "National Basketball Association (NBA) zawiesza sezon playoff w odpowiedzi na protesty społeczne po śmierci George'a Floyda.",
+    "category": "Koszykówka",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 5,
+    "title": "Sadio Mane otrzymuje Złotą Piłkę CAF",
+    "text": "Senegalski piłkarz Sadio Mane odbiera Złotą Piłkę CAF (Konfederacji Afrykańskiej Piłki Nożnej) za wybitne osiągnięcia w roku 2020.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 6,
+    "title": "Naomi Osaka zwycięża w US Open",
+    "text": "Japońska tenisistka Naomi Osaka wygrywa kobiecy singiel w US Open, pokonując Wiktorię Azarenkę w finale.",
+    "category": "Tenis",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 7,
+    "title": "Bayern Monachium triumfuje w Lidze Mistrzów UEFA",
+    "text": "Bayern Monachium pokonuje Paris Saint-Germain 1:0 w finale Ligi Mistrzów UEFA, zdobywając tytuł mistrza Europy.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 8,
+    "title": "Cristiano Ronaldo przechodzi do Juventus FC",
+    "text": "Portugalski napastnik Cristiano Ronaldo przechodzi z Realu Madryt do Juventus FC w jednym z najdroższych transferów w historii piłki nożnej.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 9,
+    "title": "Simona Halep wygrywa French Open",
+    "text": "Rumuńska tenisistka Simona Halep zdobywa tytuł mistrza French Open, pokonując w finale Igu Swiatek.",
+    "category": "Tenis",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 10,
+    "title": "Kansas City Chiefs zwycięża w Super Bowl LIV",
+    "text": "Kansas City Chiefs pokonuje San Francisco 49ers 31:20 w Super Bowl LIV, zdobywając mistrzostwo NFL.",
+    "category": "Futbol amerykański",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 11,
+    "title": "Sprint Usaina Bolta w jego ostatnim wyścigu indywidualnym",
+    "text": "Jamajski sprinter Usain Bolt kończy karierę, biorąc udział w swoim ostatnim wyścigu indywidualnym na Mistrzostwach Świata w Londynie.",
+    "category": "Lekkoatletyka",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 12,
+    "title": "Serena Williams osiąga rekord 23. tytułu wielkoszlemowego",
+    "text": "Amerykańska tenisistka Serena Williams zdobywa Australian Open, osiągając rekordowy 23. tytuł wielkoszlemowy w erze Open Era.",
+    "category": "Tenis",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 13,
+    "title": "Cancelo dołącza do Manchesteru City",
+    "text": "Portugalski obrońca João Cancelo dołącza do Manchesteru City po udanym okresie w Juventusie.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 14,
+    "title": "Atlanta United zdobywa MLS Cup",
+    "text": "Atlanta United zwycięża w MLS Cup, pokonując Portland Timbers 2:0 w finale i sięgając po swój pierwszy tytuł w historii klubu.",
+    "category": "Piłka nożna",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 15,
+    "title": "Masters Augusta bez udziału publiczności z powodu pandemii",
+    "text": "Mistrzostwa Masters w golfa na Augusta National Golf Club odbywają się bez udziału publiczności z powodu pandemii COVID-19.",
+    "category": "Golf",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 16,
+    "title": "Derrick Henry prowadzi NFL w liczbie zdobytych jardów",
+    "text": "Running back Tennessee Titans, Derrick Henry, kończy sezon 2020 jako lider NFL w liczbie zdobytych jardów na biegach.",
+    "category": "Futbol amerykański",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 17,
+    "title": "Rafael Nadal wygrywa Roland Garros po raz 13.",
+    "text": "Hiszpański tenisista Rafael Nadal zdobywa swoje 13. mistrzostwo French Open, pokonując Novaka Djokovicia w finale.",
+    "category": "Tenis",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 18,
+    "title": "Miami Heat w finale NBA po imponującym występie w bańce NBA",
+    "text": "Miami Heat osiąga finał NBA po imponującym występie w bańce NBA w kompleksie sportowym w Disney World.",
+    "category": "Koszykówka",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "id": 19,
+    "title": "Sebastian Vettel ogłasza odejście z Ferrari",
+    "text": "Niemiecki kierowca Sebastian Vettel ogłasza, że opuści zespół Ferrari po zakończeniu sezonu Formuły 1.",
+    "category": "Formuła 1",
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  }
+]

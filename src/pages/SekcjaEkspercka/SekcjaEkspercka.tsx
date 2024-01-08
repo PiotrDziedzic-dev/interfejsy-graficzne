@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import {
   Box,
   Grid,
@@ -7,12 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import {
-  AktualnosciPost,
-  AktualnosciSportowe,
-  ForumPostsMocked,
-  OpinieEkspertow,
-} from "../../constants/constants";
+import { AktualnosciPost, OpinieEkspertow } from "../../constants/constants";
 import {
   AccountCircle,
   ChatBubbleOutlineOutlined,

@@ -12,11 +12,7 @@ import {
 } from "@mui/material";
 import { useSnackbar } from "notistack";
 import { useState } from "react";
-import {
-  AktualnosciSportowe,
-  GroupsData,
-  sports,
-} from "./../../constants/constants";
+import { GroupsData, sports } from "./../../constants/constants";
 import CreateGroupDialog from "./../../components/CreateGroupDialog/CreateGroupDialog";
 import AddSortingDialog from "./../../components/AddSortingDialog/AddSortingDialog";
 import AddFilterDialog from "./../../components/AddFilterDialog/AddFilterDialog";

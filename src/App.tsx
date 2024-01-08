@@ -11,7 +11,7 @@ function App() {
     <div style={{ height: "100%" }}>
       <Routes>
         <Route element={<Wrapper />}>
-          <Route path="/aktualnosci" element={<Aktualnosci />} />
+          <Route path="" element={<Aktualnosci />} />
           <Route path="/forum" element={<Forum />} />
           <Route path="/my_profile" element={<MyProfile />} />
           <Route path="/sekcja_ekspercka" element={<SekcjaEkspercka />} />

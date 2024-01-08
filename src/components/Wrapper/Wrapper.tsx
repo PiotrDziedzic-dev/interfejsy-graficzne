@@ -1,7 +1,7 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { AccountBox, AccountCircle } from "@mui/icons-material";
 import { Outlet, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 // @ts-ignore
 import sport_connect from "./../../assets/sport_connect.jpg";
 interface NavigationButton {
@@ -12,7 +12,8 @@ interface NavigationButton {
     | "grupy"
     | "sekcjaEkspercka"
     | "my_profile"
-    | "sekcja_ekspercka";
+    | "sekcja_ekspercka"
+    | "";
 }
 
 const Wrapper = () => {
@@ -23,6 +24,7 @@ const Wrapper = () => {
     | "sekcjaEkspercka"
     | "my_profile"
     | "sekcja_ekspercka"
+    | ""
   >("aktualnosci");
 
   const navigate = useNavigate();
@@ -30,7 +32,7 @@ const Wrapper = () => {
   const navigationButtons: NavigationButton[] = [
     {
       name: "Aktualnosci",
-      redirectTo: "aktualnosci",
+      redirectTo: "",
     },
     {
       name: "Forum Dyskusyjne",
@@ -59,13 +61,21 @@ const Wrapper = () => {
           gap: 2,
         }}
       >
-        <Box sx={{ ml: 4 }}>
+        <Stack
+          sx={{ ml: 4 }}
+          spacing={1}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <img
             src={sport_connect}
             alt={"logo"}
             style={{ maxWidth: "100px" }}
           ></img>
-        </Box>
+          <Typography variant={"h6"} color={"primary"} sx={{ fontWeight: 650 }}>
+            Sport connect
+          </Typography>
+        </Stack>
         <Box sx={{ display: "flex", gap: 2 }}>
           {navigationButtons.map((t) => (
             <Button

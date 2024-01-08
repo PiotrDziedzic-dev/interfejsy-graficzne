@@ -1,0 +1,11 @@
+{
+  "name": "Jan",
+  "surname": "Kowalski",
+  "email": "przykladowy.email@test.com",
+  "phoneNumber": "123456789",
+  "location": "Kraków",
+  "public": true,
+  "private": false,
+  "visible_only_for_friends": false,
+  "description": "Cześć nazwyam się Jan, mam 30 lat, a moim głównymi zainteresowaniami są siatkówka i hokej"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Najnowsze wydarzenia w piłce nożnej",
+    "text": "Co sądzicie o ostatnich meczach? Które drużyny zaskoczyły was pozytywnie?",
+    "category": "Piłka Nożna",
+    "id": 1,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Jak poprawić swoje osiągi biegowe?",
+    "text": "Podzielcie się swoimi najlepszymi poradami dotyczącymi treningu biegowego. Jakie techniki są najskuteczniejsze?",
+    "category": "Biegi",
+    "id": 2,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Odkrywanie nowych tras rowerowych",
+    "text": "Gdzie jeździcie na rowerze? Podzielcie się swoimi ulubionymi trasami i odkryciami!",
+    "category": "Kolarstwo",
+    "id": 3,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Trening siłowy dla początkujących",
+    "text": "Poszukuję prostych ćwiczeń siłowych dla osób rozpoczynających przygodę ze sportem. Jakie polecacie?",
+    "category": "Trening Siłowy",
+    "id": 4,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Najlepsze momenty w historii sportu",
+    "text": "Podzielcie się waszymi ulubionymi chwilami sportowymi. Czy to był gol, rekord czy wyjątkowy mecz?",
+    "category": "Sportowe Wspomnienia",
+    "id": 5,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Nowości w świecie sportu elektronicznego",
+    "text": "Które gry są obecnie najpopularniejsze? Jakie są wasze ulubione turnieje esportowe?",
+    "category": "eSport",
+    "id": 6,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Jak radzić sobie z kontuzjami w sporcie",
+    "text": "Podzielcie się swoimi doświadczeniami dotyczącymi kontuzji sportowych i jak się z nimi mierzyć.",
+    "category": "Zdrowie Sportowców",
+    "id": 7,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Ranking najlepszych tenisistów",
+    "text": "Kto według was jest obecnie najlepszym tenisistą? Komentarze i dyskusje na temat rankingu ATP.",
+    "category": "Tenis Ziemny",
+    "id": 8,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Zawody wspinaczkowe na najwyższych szczytach",
+    "text": "Kto próbował swoich sił w wspinaczce górskiej? Podzielcie się swoimi wrażeniami i historiami.",
+    "category": "Wspinaczka Górska",
+    "id": 9,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Dieta przed maratonem",
+    "text": "Jakie posiłki warto spożywać przed maratonem? Podzielcie się swoimi planami żywieniowymi.",
+    "category": "Maraton",
+    "id": 10,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Najlepsze techniki pływackie",
+    "text": "Jakie techniki pływackie są najbardziej efektywne? Porady dla początkujących i zaawansowanych.",
+    "category": "Pływanie",
+    "id": 11,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Nowości sprzętowe dla kolarzy",
+    "text": "Czy ktoś testował nowe rowery i akcesoria? Podzielcie się recenzjami!",
+    "category": "Sprzęt Kolarski",
+    "id": 12,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Ciekawostki z świata sportu",
+    "text": "Dzielcie się interesującymi faktami i ciekawostkami z dziedziny sportu. Może ktoś ma nietypowe hobby sportowe?",
+    "category": "Sportowe Ciekawostki",
+    "id": 13,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Jak pokonać stres przed zawodami?",
+    "text": "Stres przed zawodami towarzyszy wielu sportowcom. Jak sobie z nim radzicie?",
+    "category": "Psychologia Sportu",
+    "id": 14,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Najlepsze miejsca do uprawiania sportów zimowych",
+    "text": "Gdzie najlepiej wybrać się na narty czy snowboard? Podzielcie się swoimi ulubionymi miejscami.",
+    "category": "Sporty Zimowe",
+    "id": 15,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Porady dotyczące ćwiczeń rozciągających",
+    "text": "Jakie ćwiczenia rozciągające polecacie po intensywnym treningu? Jak unikać kontuzji?",
+    "category": "Rozciąganie",
+    "id": 16,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Czy sporty walki są bezpieczne dla każdego?",
+    "text": "Dyskusja na temat bezpieczeństwa uprawiania sportów walki, szczególnie dla początkujących.",
+    "category": "Sporty Walki",
+    "id": 17,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Najlepsze aplikacje do monitorowania treningów",
+    "text": "Które aplikacje fitness są według was najbardziej przydatne? Podzielcie się swoimi rekomendacjami.",
+    "category": "Aplikacje Fitness",
+    "id": 18,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Sportowe wyzwania na nowy rok",
+    "text": "Kto ma jakieś sportowe postanowienia na nadchodzący rok? Podzielcie się nimi!",
+    "category": "Nowy Rok, Nowe Wyzwania",
+    "id": 19,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  },
+  {
+    "title": "Jak dbać o bezpieczeństwo podczas jazdy na rolkach?",
+    "text": "Porady dotyczące ochrony i bezpieczeństwa podczas jazdy na rolkach. Kask czy ochraniacze?",
+    "category": "Rolkowanie",
+    "id": 20,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": []
+  }
+]

@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.js": "/interfejsy-graficzne/static/js/main.04980100.js",
+    "main.js": "/interfejsy-graficzne/static/js/main.e25937e9.js",
     "static/js/787.069f0302.chunk.js": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js",
-    "static/media/real.png": "/interfejsy-graficzne/static/media/real.55eccf6fe1344eb68db5.png",
+    "static/media/koszykowka.jpeg": "/interfejsy-graficzne/static/media/koszykowka.082568114c7393be1ee2.jpeg",
+    "static/media/pilkaNozna.jpeg": "/interfejsy-graficzne/static/media/pilkaNozna.5bd6e6df14eb2ae017a7.jpeg",
+    "static/media/skokiSpadochronowe.webp": "/interfejsy-graficzne/static/media/skokiSpadochronowe.32b659608cb9256d5773.webp",
     "static/media/sport_connect.jpg": "/interfejsy-graficzne/static/media/sport_connect.3d8332024627fbde2d7b.jpg",
+    "static/media/siatkowka.webp": "/interfejsy-graficzne/static/media/siatkowka.2e67e251300329c39d46.webp",
     "static/media/volleyball_player.webp": "/interfejsy-graficzne/static/media/volleyball_player.b0d11441b967e2faef1d.webp",
+    "static/media/sportsPicture.jpg": "/interfejsy-graficzne/static/media/sportsPicture.85bd5b6f42784451d453.jpg",
+    "static/media/biegi.jpeg": "/interfejsy-graficzne/static/media/biegi.4e974e709a50fbb6c1f1.jpeg",
     "index.html": "/interfejsy-graficzne/index.html",
-    "main.04980100.js.map": "/interfejsy-graficzne/static/js/main.04980100.js.map",
+    "main.e25937e9.js.map": "/interfejsy-graficzne/static/js/main.e25937e9.js.map",
     "787.069f0302.chunk.js.map": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.04980100.js"
+    "static/js/main.e25937e9.js"
   ]
 }

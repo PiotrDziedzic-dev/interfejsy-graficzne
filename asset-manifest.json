@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/interfejsy-graficzne/static/js/main.e25937e9.js",
+    "main.js": "/interfejsy-graficzne/static/js/main.149ac2f7.js",
     "static/js/787.069f0302.chunk.js": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js",
     "static/media/koszykowka.jpeg": "/interfejsy-graficzne/static/media/koszykowka.082568114c7393be1ee2.jpeg",
     "static/media/pilkaNozna.jpeg": "/interfejsy-graficzne/static/media/pilkaNozna.5bd6e6df14eb2ae017a7.jpeg",
@@ -11,10 +11,10 @@
     "static/media/sportsPicture.jpg": "/interfejsy-graficzne/static/media/sportsPicture.85bd5b6f42784451d453.jpg",
     "static/media/biegi.jpeg": "/interfejsy-graficzne/static/media/biegi.4e974e709a50fbb6c1f1.jpeg",
     "index.html": "/interfejsy-graficzne/index.html",
-    "main.e25937e9.js.map": "/interfejsy-graficzne/static/js/main.e25937e9.js.map",
+    "main.149ac2f7.js.map": "/interfejsy-graficzne/static/js/main.149ac2f7.js.map",
     "787.069f0302.chunk.js.map": "/interfejsy-graficzne/static/js/787.069f0302.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e25937e9.js"
+    "static/js/main.149ac2f7.js"
   ]
 }

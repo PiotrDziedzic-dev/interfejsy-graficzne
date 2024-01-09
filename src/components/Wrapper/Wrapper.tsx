@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import {
   AccountBox,
   AccountCircle,
@@ -71,10 +71,22 @@ const Wrapper = () => {
           gap: 30,
         }}
       >
-        Follow us on social media, to stay up to date with everything!
-        <Instagram />
-        <Facebook />
-        <Twitter />
+        Zaobserwuj nas na social mediach, żeby nie ominąć żadnych nowości!
+        <IconButton
+          onClick={() => window.open("https://instagram.com", "_blank")}
+        >
+          <Instagram />
+        </IconButton>
+        <IconButton
+          onClick={() => window.open("https://facebook.com", "_blank")}
+        >
+          <Facebook />
+        </IconButton>
+        <IconButton
+          onClick={() => window.open("https://twitter.com", "_blank")}
+        >
+          <Twitter />
+        </IconButton>
       </Box>
     );
   };

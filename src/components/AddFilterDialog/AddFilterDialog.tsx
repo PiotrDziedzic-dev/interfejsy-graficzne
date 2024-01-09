@@ -1,5 +1,4 @@
-import { FC } from "react";
-import { useSnackbar } from "notistack";
+import React, { FC, useState } from "react";
 import {
   Box,
   Button,
@@ -12,15 +11,39 @@ import {
   Select,
   Stack,
 } from "@mui/material";
+import { useSnackbar } from "notistack";
 import { sports } from "./../../constants/constants";
 
 interface Props {
   open: boolean;
   handleClose: () => void;
+  handleFilter: (filterOptions: any) => void;
+  filterOptions: any;
+  setFilterOptions: (x: any) => void;
 }
 
-const AddFilterDialog: FC<Props> = ({ open, handleClose }) => {
+const AddFilterDialog: FC<Props> = ({
+  open,
+  handleClose,
+  handleFilter,
+  filterOptions,
+  setFilterOptions,
+}) => {
   const { enqueueSnackbar } = useSnackbar();
+
+  const handleSave = () => {
+    handleFilter(filterOptions);
+    enqueueSnackbar("Filtrowanie zastosowane pomyślnie", {
+      variant: "success",
+    });
+    handleClose();
+  };
+
+  const handleChange = (field: string, value: string) => {
+    // @ts-ignore
+    setFilterOptions((prev) => ({ ...prev, [field]: value }));
+  };
+
   return (
     <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
       <DialogTitle
@@ -33,17 +56,12 @@ const AddFilterDialog: FC<Props> = ({ open, handleClose }) => {
       <Divider />
 
       <Stack spacing={2} sx={{ padding: "16px" }}>
-        <FormControl>
-          <InputLabel>Sport</InputLabel>
-          <Select>
-            {sports.map((sport) => {
-              return <MenuItem value={sport}>{sport}</MenuItem>;
-            })}
-          </Select>
-        </FormControl>
-        <FormControl>
+        <FormControl fullWidth>
           <InputLabel>Kategoria</InputLabel>
-          <Select>
+          <Select
+            value={filterOptions.category}
+            onChange={(e) => handleChange("category", e.target.value)}
+          >
             <MenuItem value={"Mecze"}>{"Mecze"}</MenuItem>
             <MenuItem value={"Uprawianie sportu"}>
               {"Uprawianie sportu"}
@@ -53,16 +71,24 @@ const AddFilterDialog: FC<Props> = ({ open, handleClose }) => {
             </MenuItem>
           </Select>
         </FormControl>
-        <FormControl>
+
+        <FormControl fullWidth>
           <InputLabel>Rodzaj grupy</InputLabel>
-          <Select>
+          <Select
+            value={filterOptions.groupType}
+            onChange={(e) => handleChange("groupType", e.target.value)}
+          >
             <MenuItem value={"Publiczna"}>{"Publiczna"}</MenuItem>
             <MenuItem value={"Prywatna"}>{"Prywatna"}</MenuItem>
           </Select>
         </FormControl>
-        <FormControl>
-          <InputLabel>Rodzaj grupy</InputLabel>
-          <Select>
+
+        <FormControl fullWidth>
+          <InputLabel>Liczba członków</InputLabel>
+          <Select
+            value={filterOptions.memberCount}
+            onChange={(e) => handleChange("memberCount", e.target.value)}
+          >
             <MenuItem value={"Poniżej 10 członków"}>
               {"Poniżej 10 członków"}
             </MenuItem>
@@ -74,9 +100,13 @@ const AddFilterDialog: FC<Props> = ({ open, handleClose }) => {
             </MenuItem>
           </Select>
         </FormControl>
-        <FormControl>
+
+        <FormControl fullWidth>
           <InputLabel>Ocena</InputLabel>
-          <Select>
+          <Select
+            value={filterOptions.rate}
+            onChange={(e) => handleChange("rate", e.target.value)}
+          >
             <MenuItem value={"1 Gwiazdka"}>{"1 Gwiazdka"}</MenuItem>
             <MenuItem value={"2 Gwiazdki"}>{"2 Gwiazdki"}</MenuItem>
             <MenuItem value={"3 Gwiazdki"}>{"3 Gwiazdki"}</MenuItem>
@@ -84,16 +114,9 @@ const AddFilterDialog: FC<Props> = ({ open, handleClose }) => {
             <MenuItem value={"5 Gwiazdek"}>{"5 Gwiazdek"}</MenuItem>
           </Select>
         </FormControl>
+
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <Button
-            variant={"contained"}
-            onClick={() => {
-              handleClose();
-              enqueueSnackbar("Filtrowanie zaplikowane pomyślnie", {
-                variant: "success",
-              });
-            }}
-          >
+          <Button variant={"contained"} onClick={handleSave}>
             Zapisz reguły filtrowania
           </Button>
         </Box>

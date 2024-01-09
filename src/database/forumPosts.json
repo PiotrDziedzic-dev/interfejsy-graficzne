@@ -6,7 +6,20 @@
     "id": 1,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Jan K",
+        "content": "Świetne widowisko! Mecz pomiędzy FC Barcelona a Real Madrid był emocjonujący od pierwszej do ostatniej minuty. Oby więcej takich spotkań!"
+      },
+      {
+        "user": "Anna D",
+        "content": "A czy przypadkiem wynik tego meczu to nie 0-0"
+      },
+      {
+        "user": "Jan Kowalski",
+        "content": "Tak!!! ale i tak fajny mecz"
+      }
+    ]
   },
   {
     "title": "Jak poprawić swoje osiągi biegowe?",
@@ -15,7 +28,16 @@
     "id": 2,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Ray K",
+        "content": "Ostatnio odkryłem, że trening interwałowy naprawdę działa cuda dla poprawy kondycji biegowej! Krótkie sprinty przeplatane chwilami spokojnego biegu sprawiły, że zauważyłem ogromny postęp. "
+      },
+      {
+        "user": "Beniamin R",
+        "content": "Stawiam na regularne treningi wzmacniające, zwłaszcza dla mięśni nóg i core. Wzmocniona muskulatura pomaga utrzymać stabilność podczas biegu, co przekłada się na lepszą wydajność. Dodatkowo, nie zapominajcie o odpowiednim rozciąganiu po treningu! "
+      }
+    ]
   },
   {
     "title": "Odkrywanie nowych tras rowerowych",
@@ -24,7 +46,16 @@
     "id": 3,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Jan K",
+        "content": "trasa orlich gniazd !! Moja Polecajka nr1"
+      },
+      {
+        "user": "Marlena H",
+        "content": "Kraków wzdłóż Wisły polecam na maksa <3"
+      }
+    ]
   },
   {
     "title": "Trening siłowy dla początkujących",
@@ -33,7 +64,16 @@
     "id": 4,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "John J",
+        "content": "Zacząłem od prostych ćwiczeń, takich jak przysiady i pompki. Działały świetnie dla mnie jako początkującego!"
+      },
+      {
+        "user": "Maja D",
+        "content": "Ja polecam również plank i lunges. To świetne ćwiczenia na wzmocnienie mięśni."
+      }
+    ]
   },
   {
     "title": "Najlepsze momenty w historii sportu",
@@ -42,7 +82,16 @@
     "id": 5,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Dawid Z",
+        "content": "Mój ulubiony moment to zawsze ten, gdy Kowalski zdobył bramkę w ostatnich sekundach meczu. Niezapomniane emocje!"
+      },
+      {
+        "user": "Zuzia Z",
+        "content": "Pamiętam, jak Kowalski strzelił gola z rzutu wolnego. Mistrzostwo!"
+      }
+    ]
   },
   {
     "title": "Nowości w świecie sportu elektronicznego",
@@ -51,7 +100,16 @@
     "id": 6,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Zofia G",
+        "content": "Ostatnio popularne są gry typu battle royale, a moim ulubionym turniejem esportowym jest ESL One. A wy?"
+      },
+      {
+        "user": "Grzegorz F",
+        "content": "Ja najbardziej lubię śledzić turnieje League of Legends. Niesamowita rywalizacja!"
+      }
+    ]
   },
   {
     "title": "Jak radzić sobie z kontuzjami w sporcie",
@@ -60,16 +118,34 @@
     "id": 7,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Filip K",
+        "content": "Kiedyś złamałem nogę na boisku, ale dzięki odpowiedniej rehabilitacji wróciłem do formy. Ważne, żeby nie zaniedbywać leczenia!"
+      },
+      {
+        "user": "Karol T",
+        "content": "To prawda, leczenie kontuzji to kluczowa sprawa. Ja polecam także regularne rozciąganie."
+      }
+    ]
   },
   {
     "title": "Ranking najlepszych tenisistów",
     "text": "Kto według was jest obecnie najlepszym tenisistą? Komentarze i dyskusje na temat rankingu ATP.",
-    "category": "Tenis Ziemny",
+    "category": "Tenis",
     "id": 8,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Tomasz O",
+        "content": "Wiem, że Federer jest legendą, ale aktualnie Djokovic robi niesamowite rzeczy. Wasze myśli na temat rankingu ATP?"
+      },
+      {
+        "user": "Olga W",
+        "content": "Djokovic jest w fenomenalnej formie, ale Federer i Nadal też mają wciąż wiele do zaoferowania. Walka trwa!"
+      }
+    ]
   },
   {
     "title": "Zawody wspinaczkowe na najwyższych szczytach",
@@ -78,7 +154,16 @@
     "id": 9,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Wiktor S",
+        "content": "Wspinaczka górska to niesamowite doświadczenie! Szczególnie pamiętam moment, gdy osiągnąłem szczyt. Polecam spróbować!"
+      },
+      {
+        "user": "Seba B",
+        "content": "Te widoki na szlaku górskim są nie do opisania. Człowiek czuje się wolny i blisko natury."
+      }
+    ]
   },
   {
     "title": "Dieta przed maratonem",
@@ -87,7 +172,16 @@
     "id": 10,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Bartek K",
+        "content": "Przed maratonem warto spożywać węglowodany i białko. Ja zawsze jem makaron na kilka godzin przed startem."
+      },
+      {
+        "user": "Kuba S",
+        "content": "Dodatkowo, pamiętajcie o nawodnieniu! Woda to klucz do dobrego wyniku."
+      }
+    ]
   },
   {
     "title": "Najlepsze techniki pływackie",
@@ -96,7 +190,16 @@
     "id": 11,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Szymon P",
+        "content": "Najważniejsze to opanować technikę kraula. Pływanie stylem delfin też poprawia wydolność. Wy próbowaliście?"
+      },
+      {
+        "user": "Piotrek P",
+        "content": "Ja zawsze pracuję nad techniką, bo to naprawdę wpływa na szybkość i efektywność pływania."
+      }
+    ]
   },
   {
     "title": "Nowości sprzętowe dla kolarzy",
@@ -105,7 +208,16 @@
     "id": 12,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Paweł T",
+        "content": "Nowe rowery są super! Testowałem ostatnio jeden z nowych modeli i jestem zachwycony. Polecam zajrzeć do sklepu rowerowego!"
+      },
+      {
+        "user": "Tadek C",
+        "content": "Chętnie przeczytam recenzje konkretnych modeli. Który waszym zdaniem jest najlepszy?"
+      }
+    ]
   },
   {
     "title": "Ciekawostki z świata sportu",
@@ -114,7 +226,16 @@
     "id": 13,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Cyprian J",
+        "content": "Wiesz, że curling to nietypowe hobby sportowe? Kto by pomyślał, że w miotłach jest tyle frajdy!"
+      },
+      {
+        "user": "Janek D",
+        "content": "Haha, curling to zawsze świetna zabawa! Ktoś próbował jeszcze czegoś nietypowego?"
+      }
+    ]
   },
   {
     "title": "Jak pokonać stres przed zawodami?",
@@ -123,7 +244,16 @@
     "id": 14,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Damian Z",
+        "content": "Stres przed zawodami to naturalna rzecz. Ja zawsze robię głębokie oddechy i skupiam się na grze. Jak radzicie sobie z nerwami?"
+      },
+      {
+        "user": "Zygmunt W",
+        "content": "Ja słucham ulubionej muzyki, żeby się zrelaksować przed startem. Działa cuda!"
+      }
+    ]
   },
   {
     "title": "Najlepsze miejsca do uprawiania sportów zimowych",
@@ -132,7 +262,16 @@
     "id": 15,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Wacek I",
+        "content": "Jeśli chodzi o narty, to Alpy są niezastąpione. Niesamowite trasy i piękne widoki!"
+      },
+      {
+        "user": "Ignacy U",
+        "content": "A ja osobiście preferuję górskie kurorty w Kanadzie. Zawsze piękny śnieg i świetne warunki!"
+      }
+    ]
   },
   {
     "title": "Porady dotyczące ćwiczeń rozciągających",
@@ -141,7 +280,16 @@
     "id": 16,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Ula S",
+        "content": "Rozciąganie po treningu to kluczowa sprawa. Ja zawsze robię kilka minut stretching'u, żeby uniknąć kontuzji."
+      },
+      {
+        "user": "Sylwia E",
+        "content": "Czy macie jakieś ulubione ćwiczenia rozciągające?"
+      }
+    ]
   },
   {
     "title": "Czy sporty walki są bezpieczne dla każdego?",
@@ -150,7 +298,16 @@
     "id": 17,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Elwira F",
+        "content": "Sporty walki są super, ale trzeba pamiętać o zabezpieczeniach. Ochraniacze na kolana i ręce to podstawa!"
+      },
+      {
+        "user": "Fiona O",
+        "content": "Dokładnie! Bezpieczeństwo jest najważniejsze, zwłaszcza dla początkujących."
+      }
+    ]
   },
   {
     "title": "Najlepsze aplikacje do monitorowania treningów",
@@ -159,7 +316,16 @@
     "id": 18,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Olga R",
+        "content": "Osobiście polecam aplikację do treningów interwałowych. Bardzo skuteczna i motywująca!"
+      },
+      {
+        "user": "Radziu P",
+        "content": "Która aplikacja jest według was najlepsza? Chętnie spróbuję czegoś nowego."
+      }
+    ]
   },
   {
     "title": "Sportowe wyzwania na nowy rok",
@@ -168,7 +334,16 @@
     "id": 19,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Paulina S",
+        "content": "Mam postanowienie na ten rok! Chcę poprawić swój czas w biegu na 10 km. Kto jeszcze ma swoje cele?"
+      },
+      {
+        "user": "Eliza T",
+        "content": "Trzymam kciuki! Ja planuję zacząć regularne treningi cardio."
+      }
+    ]
   },
   {
     "title": "Jak dbać o bezpieczeństwo podczas jazdy na rolkach?",
@@ -177,6 +352,272 @@
     "id": 20,
     "liked": false,
     "subscribed": false,
-    "komentarze": []
+    "komentarze": [
+      {
+        "user": "Tatiana R",
+        "content": "Jeśli chodzi o jazdę na rolkach, to kask zawsze jest must-have. Bezpieczeństwo na pierwszym miejscu!"
+      },
+      {
+        "user": "Suzi W",
+        "content": "Ochraniacze na nadgarstki też warto rozważyć. Bezpiecznej jazdy, ludzie!"
+      }
+    ]
+  },
+  {
+    "title": "Rozpoczynam przygodę z siatkówką!",
+    "text": "Planuję zacząć grać w siatkówkę i szukam porad od doświadczonych graczy. Jakie są wasze ulubione ćwiczenia na poprawę techniki?",
+    "category": "Siatkówka",
+    "id": 21,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Sara R",
+        "content": "Na początek polecam skupić się na podstawach, takich jak precyzyjne odbijanie i technika przyjęcia. To kluczowe elementy gry w siatkówkę!"
+      },
+      {
+        "user": "Zibi W",
+        "content": "Dodatkowo, ćwiczenia na poprawę siły ataku, takie jak skoki z miejsca czy trening siły nóg, są świetne dla rozwijania umiejętności ofensywnych."
+      }
+    ]
+  },
+  {
+    "title": "Mistrzowskie chwile na boisku!",
+    "text": "Dzielcie się waszymi najbardziej ekscytującymi momentami z meczów siatkówki. Może jakiś niezapomniany blok czy skuteczny atak?",
+    "category": "Siatkówka",
+    "id": 22,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Dawid R",
+        "content": "Pamiętam moment, gdy moja drużyna zdobyła decydujący punkt w trudnym meczu. To uczucie nie do opisania, kiedy praca zespołowa przynosi sukces!"
+      },
+      {
+        "user": "Jolanta E",
+        "content": "Mój niezapomniany moment to spektakularny blok, który uratował mecz. Chwila skupienia i perfekcyjnej techniki. To była prawdziwa duma dla całej drużyny!"
+      }
+    ]
+  },
+  {
+    "title": "Nowy na boisku",
+    "text": "Szukam porad od doświadczonych graczy koszykówki! Jakie ćwiczenia polecacie dla początkującego?",
+    "category": "Koszykówka",
+    "id": 23,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Dawid F",
+        "content": "Zacznij od podstawowych umiejętności, takich jak precyzyjne rzuty i technika dryblingu. To fundamenty dobrej gry!"
+      },
+      {
+        "user": "Filip U",
+        "content": "Pamiętaj o treningu kondycyjnym i skokach. W koszykówce siła i zwinność to klucz do efektywnej gry!"
+      }
+    ]
+  },
+  {
+    "title": "Najbardziej ekscytujące momenty na parkiecie",
+    "text": "Podzielcie się waszymi przeżyciami z meczów koszykówki. Czy było coś, co zapadło wam głęboko w pamięć?",
+    "category": "Koszykówka",
+    "id": 24,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Waldek P",
+        "content": "Pamiętam, jak zrobiłem efektowny slam dunk po kontrze. To było uczucie, którego nie da się opisać. Chwilowa ekstaza!"
+      },
+      {
+        "user": "Aleksandra H",
+        "content": "Mój niezapomniany moment to trzypunktowy rzut na ostatnich sekundach meczu. Cała hala oszalała!"
+      }
+    ]
+  },
+  {
+    "title": "Zaczynam przygodę z piłką ręczną!",
+    "text": "Jestem nowy w tej grze i poszukuję cennych wskazówek od tych, którzy już zdobyli doświadczenie na boisku. Jakie ćwiczenia pomogą mi poprawić zarówno umiejętności techniczne, jak i kondycję? Czy są specjalne triki, których warto się nauczyć? Dzielcie się swoimi sekretami sukcesu, a może nawet wspomnijcie o waszych początkach!",
+    "category": "Piłka Ręczna",
+    "id": 25,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Kamil P",
+        "content": "Cześć! Na początek polecam skupienie się na precyzyjnym rzucie. Trening rzutów na bramkę z różnych pozycji pomoże ci zdobyć pewność w grze ofensywnej. Powodzenia!"
+      },
+      {
+        "user": "Seweryn W",
+        "content": "Witaj w świecie piłki ręcznej! Nie zapomnij także o treningach kondycyjnych, zwłaszcza biegu i szybkości. To kluczowe elementy, które wpłyną pozytywnie na twoją grę zarówno w ataku, jak i obronie. Baw się dobrze na boisku!"
+      }
+    ]
+  },
+  {
+    "title": "Wkraczam na lodowisko",
+    "text": "Szukam porad od pasjonatów hokeja! Jakie są wasze ulubione treningi i techniki w tej fascynującej dyscyplinie?\"\n\nHej hokejowe społeczeństwo! Planuję zacząć swoją przygodę z hokejem i potrzebuję Waszej mądrości hokejowej. Jakie treningi pomogą mi poprawić umiejętności patrzenia na bramkę? Może macie sprawdzone triki podczas gry na lodzie? Podzielcie się swoimi doświadczeniami i poradami!",
+    "category": "Hokej",
+    "id": 26,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Mariola D",
+        "content": "Cześć! Polecam regularne treningi na strzały. Rzuty z różnych pozycji i kątów pomogą ci w zdobywaniu bramek. A także nie zapominaj o pracy nad precyzyjnym kijem i umiejętnościami dryblingu. Powodzenia na lodowisku!"
+      },
+      {
+        "user": "Witek L",
+        "content": "Witaj! Ważne jest także doskonalenie umiejętności jazdy na łyżwach. Spróbuj różnych technik skrętów i manewrów, aby zwiększyć swoją zwinność na lodzie. Hokej to nie tylko strzały, ale także szybkość i kontrola nad kijem. Udanej zabawy!"
+      }
+    ]
+  },
+  {
+    "title": "Najlepsze chwile na lodowisku",
+    "text": "Chciałbym usłyszeć o waszych niesamowitych chwilach podczas meczów hokeja. Czy to niezapomniane bramki, spektakularne asysty czy może niesamowite interwencje bramkarzy? Podzielcie się swoimi historiami z tych emocjonujących chwil na lodowisku! ",
+    "category": "Hokej",
+    "id": 27,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Kamil P",
+        "content": "Pamiętam mecz, w którym nasza drużyna odwróciła wynik w ostatnich minutach. Niesamowita walka i radość z odniesionego sukcesu"
+      },
+      {
+        "user": "Wacław I",
+        "content": "Moja ulubiona chwila to zawsze nieoczekiwane przerwanie gry na lodowisku przez jakiegoś sarenkę. To było coś niesamowitego i dowodzi, że hokej to nie tylko sport, ale także pełen nieprzewidywalności przygód!"
+      }
+    ]
+  },
+  {
+    "title": "Tenisowe Pasje: Dzielcie się Waszymi Doświadczeniami i Poradami!",
+    "text": "Chciałbym rozpocząć dyskusję na temat naszych tenisowych pasji. Jakie są Wasze ulubione momenty z gry w tenisa? Może macie sprawdzone ćwiczenia na poprawę techniki? Podzielcie się również Waszymi ulubionymi turniejami i zawodnikami! Chętnie posłucham Waszych historii i ciekawych spostrzeżeń związanych z tym wspaniałym sportem.",
+    "category": "Tenis",
+    "id": 28,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Ula L",
+        "content": "Hej! Moim ulubionym momentem z gry w tenisa było zdobycie pierwszego asa podczas meczu turniejowego. To uczucie, gdy piłka idealnie ląduje w narożniku kortu, jest niezapomniane!"
+      },
+      {
+        "user": "Tomasz F",
+        "content": "Cześć! Polecam regularne treningi na ścianie, aby poprawić precyzję i siłę uderzeń. A jeśli chodzi o turnieje, to zawsze emocjonuję się podczas Wielkiego Szlema. Kto jest Waszym ulubionym tenisistą?"
+
+
+      }
+    ]
+  },
+  {
+    "title": "W Ringu Życia: Podzielcie się Waszymi Historiami i Pasjami Bokserskimi!",
+    "text": "Chciałbym usłyszeć Wasze historie związane z tą dynamiczną dyscypliną. Jak zaczęła się Wasza przygoda z boksem? Może macie ulubione techniki czy chwile ze swoich treningów, które szczególnie Was zainspirowały? Podzielcie się również swoimi ulubionymi walkami bokserskimi i bokserami, którzy Was inspirują!",
+    "category": "Box",
+    "id": 29,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Borys W",
+        "content": "Hej! Zaczęłem boksować jako nastolatek, a moją ulubioną chwilą było pierwsze sparowanie w ringu. To niesamowite uczucie, gdy implementujesz trening w praktyce!"
+      },
+      {
+        "user": "Gienek P",
+        "content": "Cześć! Polecam regularne treningi na worku, aby poprawić siłę ciosów. Moją ulubioną walką jest klasyk Ali vs. Frazier. Bez wątpienia jeden z najbardziej epickich pojedynków w historii boksu!"
+      }
+    ]
+  },
+
+  {
+    "title": "Droga Judoki: Dzielcie się Waszymi Przeżyciami i Pasjami Judo!",
+    "text": "Chciałbym stworzyć przestrzeń do dzielenia się Waszymi doświadczeniami i pasjami związanymi z judo. Jak zaczęła się Wasza przygoda z tą sztuką walki? Może macie ciekawe historie z treningów czy turniejów? Podzielcie się swoimi ulubionymi technikami, a może zaprezentujcie nam Wasze najbardziej inspirujące chwile na tatami! ",
+    "category": "Judo",
+    "id": 30,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Lucjana D",
+        "content": "Zaczęłam trenować judo jako dziecko i moją ulubioną chwilą było zdobycie pierwszego danu. To niesamowite osiągnięcie i wynik lat ciężkiej pracy! "
+      },
+      {
+        "user": "Daria K",
+        "content": "Hej! Polecam regularne treningi na parterze, aby doskonalić techniki rzutów i dźwigni. Moją ulubioną techniką jest osoto-gari. A jakie są Wasze ulubione rzuty w judo?"
+      }
+    ]
+  },
+
+  {
+    "title": "Ping Pongowe Pasje: Dzielcie się Waszymi Historiami i Trikami ze Stołu!",
+    "text": "Chciałbym zainicjować dyskusję na temat naszych ping pongowych pasji. Jak zaczęła się Wasza przygoda z tenisem stołowym? Może macie ciekawe anegdoty z treningów lub turniejów? Podzielcie się swoimi ulubionymi technikami, a może pokażcie nam Wasze najlepsze triki ze stołu! ",
+    "category": "Tenis Stołowy",
+    "id": 31,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Kaja M",
+        "content": "Cześć! Zaczęłam grać w tenisa stołowego z przyjaciółmi, a moją ulubioną chwilą było zdobycie punktu po emocjonującej wymianie. Uwielbiam tę dynamikę!"
+      },
+      {
+        "user": "Kuba B",
+        "content": "Polecam treningi nad techniką odbić, zwłaszcza tych bocznych. Sprawdza się świetnie podczas szybkich wymian. A jakie macie swoje ulubione triki podczas gry w ping ponga?"
+      }
+    ]
+  },
+
+  {
+    "title": "Bilardowe Rozgrywki: Podzielcie się Waszymi Przeżyciami i Trikami Związanych z Zielonym Stołem!",
+    "text": "Chciałbym stworzyć miejsce do dzielenia się Waszymi historiami i trikami związanymi z bilardem. Jak zaczęła się Wasza pasja do tej fascynującej gry? Może macie anegdoty z bilardowych turniejów czy ciekawe strategie gry? Podzielcie się swoimi ulubionymi technikami i chwilami spędzonymi przy zielonym stole! ",
+    "category": "Bilard",
+    "id": 33,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Michał S",
+        "content": "Zaczęłem grać w bilard dzięki ojcu, a moim ulubionym momentem było zdobycie bilu na ostatniej dziurze. Czułem się jak prawdziwy mistrz!"
+      },
+      {
+        "user": "Paulina G",
+        "content": "Polecam treningi nad precyzyjnym uderzaniem bil, zwłaszcza przy łamaniu stołu. To kluczowe dla sukcesu w grze. Jakie macie swoje ulubione techniki łamania racka?"
+      }
+    ]
+  },
+  {
+    "title": "Kręglarskie Rozrywki: Dzielcie się Waszymi Historiami i Rzutami Związanych z Kręglami!",
+    "text": "Chciałbym usłyszeć Wasze historie i doświadczenia związane z tą ekscytującą grą. Jak zaczęła się Wasza przygoda z kręglami? Może macie zabawne anegdoty z ligowych rozgrywek lub ciekawe techniki rzutów do podzielenia się z innymi? Podzielcie się swoimi ulubionymi chwilami spędzonymi na kręgielni!",
+    "category": "Kręgle",
+    "id": 34,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Agata M",
+        "content": "Moja przygoda z kręglami zaczęła się na urodzinach w kręgielni, a najbardziej niezapomnianym rzutem było zdobycie strajku na ostatnim kręglu. Ekscytacja była nie do opisania! "
+      },
+      {
+        "user": "Ernest M",
+        "content": "Polecam trening nad precyzyjnym rzutem, zwłaszcza nad kontrolą kierunku. A jakie są Wasze triki na zwiększenie liczby zbitych kręgli? Podzielcie się swoimi sprawdzonymi metodami!"
+      }
+    ]
+  },
+  {
+    "title": "Golfowe Rozważania: Dzielcie się Waszymi Przeżyciami i Poradami ze Świata Golfa!",
+    "text": "Chciałbym zaprosić Was do podzielenia się Waszymi doświadczeniami i cennymi wskazówkami związanych z tą elegancką dyscypliną. Jak zaczęła się Wasza przygoda z golfem? Czy macie ulubione pola golfowe, na których uwielbiacie grać? A może znacie jakieś skuteczne techniki, które chcecie podzielić się z innymi?",
+    "category": "Golf",
+    "id": 35,
+    "liked": false,
+    "subscribed": false,
+    "komentarze": [
+      {
+        "user": "Janusz O",
+        "content": "Zaczęłem grać w golfa jako dziecko, a moje najlepsze chwile to zawsze te, gdy uda mi się zaliczyć doskonałego putta. Czuć wtedy, że cała gra idzie zgodnie z planem! "
+      },
+      {
+        "user": "Radek I",
+        "content": "Polecam pracę nad grą krótką, zwłaszcza nad puttem i chipem. To kluczowe elementy dla osiągnięcia sukcesu na polu golfowym. Jakie są Wasze ulubione techniki gry krótkiej?"
+      }
+    ]
   }
 ]

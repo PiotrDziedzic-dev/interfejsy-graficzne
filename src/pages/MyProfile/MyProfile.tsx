@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import {
   Avatar,
   Box,
@@ -6,21 +8,38 @@ import {
   FormControlLabel,
   Stack,
   TextField,
-  Typography,
 } from "@mui/material";
-import { AccountCircle } from "@mui/icons-material";
-import { useState } from "react";
-import { enqueueSnackbar, useSnackbar } from "notistack";
+import React, { useEffect, useState } from "react";
+import { useSnackbar } from "notistack";
 import { useDropzone } from "react-dropzone";
 import data from "./../../database/userProfile.json";
+import initialGroupsData from "./../../database/groups.json";
 // @ts-ignore
 import volleyball_player from "./../../assets/volleyball_player.webp";
+import InspectGroupDialog from "./../../components/InspectGroupDialog";
 
 const MyProfile = () => {
   const { enqueueSnackbar } = useSnackbar();
   const [section, setSection] = useState<"my_profile" | "my_groups">(
     "my_profile"
   );
+  const [inspectGroupId, setInspectGroupId] = useState();
+
+  const [myGroups, setMyGroups] = useState([]);
+
+  useEffect(() => {
+    // Załaduj dane grup z localStorage lub z pliku JSON
+    const groupsData = JSON.parse(
+      localStorage.getItem("groupsData") || JSON.stringify(initialGroupsData)
+    );
+    // Filtruj grupy, w których użytkownik o id 1 jest członkiem
+    // @ts-ignore
+    const filteredGroups = groupsData.filter((group) =>
+      group.członkowie.includes(1)
+    );
+    setMyGroups(filteredGroups);
+  }, []);
+
   const [errors, setErrors] = useState({
     name: false,
     surname: false,
@@ -224,53 +243,29 @@ const MyProfile = () => {
     );
   };
 
-  const myGroups = () => {
+  const myGroupsSection = () => {
     return (
       <Stack sx={{ width: "100%" }}>
-        <Box>
-          <Button
-            onClick={() => setSection("my_profile")}
-            variant={"contained"}
+        {myGroups.map((group) => (
+          <Box
+            key={group.id}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              minHeight: "80px",
+              justifyContent: "space-between",
+              fontWeight: 600,
+            }}
           >
-            Mój profil
-          </Button>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            minHeight: "80px",
-            justifyContent: "space-between",
-            fontWeight: 600,
-          }}
-        >
-          Boisko na Sławkowskiej treningi w czwartek
-          <Box sx={{ color: "red" }}>2 nowe posty</Box>
-          <Button variant={"outlined"}>Wyświetl</Button>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            minHeight: "80px",
-            justifyContent: "space-between",
-            fontWeight: 600,
-          }}
-        >
-          Siatkówka, Bronowice treningi w poniedziałek
-          <Button variant={"outlined"}>Wyświetl</Button>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            minHeight: "80px",
-            justifyContent: "space-between",
-            fontWeight: 600,
-          }}
-        >
-          Entuzjaści koszykówki <Button variant={"outlined"}>Wyświetl</Button>
-        </Box>
+            {group.name}
+            <Button
+              variant={"outlined"}
+              onClick={() => setInspectGroupId(group.id)}
+            >
+              Wyświetl
+            </Button>
+          </Box>
+        ))}
       </Stack>
     );
   };
@@ -303,7 +298,7 @@ const MyProfile = () => {
       >
         {section === "my_profile" && leftPanel()}
         {section === "my_profile" && rightPanel()}
-        {section === "my_groups" && myGroups()}
+        {section === "my_groups" && myGroupsSection()}
         {section === "my_profile" && (
           <Box sx={{ paddingTop: "24px" }}>
             <Button
@@ -315,6 +310,13 @@ const MyProfile = () => {
           </Box>
         )}
       </Box>
+      {inspectGroupId && (
+        <InspectGroupDialog
+          open={inspectGroupId}
+          handleClose={() => setInspectGroupId(null)}
+          groupId={inspectGroupId}
+        />
+      )}
     </Stack>
   );
 };

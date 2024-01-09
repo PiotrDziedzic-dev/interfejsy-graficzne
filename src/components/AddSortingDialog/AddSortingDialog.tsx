@@ -1,4 +1,6 @@
-import { useSnackbar } from "notistack";
+//@ts-nocheck
+
+import React, { FC, useState } from "react";
 import {
   Box,
   Button,
@@ -10,18 +12,33 @@ import {
   MenuItem,
   Select,
   Stack,
-  TextField,
 } from "@mui/material";
-import { sports } from "@/constants/constants";
-import { FC } from "react";
+import { useSnackbar } from "notistack";
 
 interface Props {
   open: boolean;
   handleClose: () => void;
+  handleSort: (sortOption: string) => void;
+  sortOption: string;
+  setSortOption: () => void;
 }
 
-const AddSortingDialog: FC<Props> = ({ open, handleClose }) => {
+const AddSortingDialog: FC<Props> = ({
+  open,
+  handleClose,
+  handleSort,
+  sortOption,
+  setSortOption,
+}) => {
   const { enqueueSnackbar } = useSnackbar();
+  const [helperState, setHelperState] = useState();
+
+  const handleSave = () => {
+    handleSort(helperState);
+    enqueueSnackbar("Sortowanie zastosowane pomyślnie", { variant: "success" });
+    handleClose();
+  };
+
   return (
     <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
       <DialogTitle
@@ -34,9 +51,12 @@ const AddSortingDialog: FC<Props> = ({ open, handleClose }) => {
       <Divider />
 
       <Stack spacing={2} sx={{ padding: "16px" }}>
-        <FormControl>
+        <FormControl fullWidth>
           <InputLabel>Sortowanie</InputLabel>
-          <Select>
+          <Select
+            value={helperState}
+            onChange={(e) => setHelperState(e.target.value as string)}
+          >
             <MenuItem value={"Rosnąco po dacie stworzenia"}>
               {"Rosnąco po dacie stworzenia"}
             </MenuItem>
@@ -58,15 +78,7 @@ const AddSortingDialog: FC<Props> = ({ open, handleClose }) => {
           </Select>
         </FormControl>
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <Button
-            variant={"contained"}
-            onClick={() => {
-              handleClose();
-              enqueueSnackbar("Sorotwanie zaplikowane pomyślnie", {
-                variant: "success",
-              });
-            }}
-          >
+          <Button variant={"contained"} onClick={handleSave}>
             Zapisz regułę sortowania
           </Button>
         </Box>

@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "description":
+    "Cześć, będziemy się spotykać w czwartki co tydzień na treningi piłki nożnej. Boisko mamy zarezerwowane od 18:00 do 20:00. Mile widziane osoby, które mają umiejętności na poziomie przynajmniej średnim. Przygotowujemy się do zawodów które odbędą się pod koniec sierpnia tego roku w Hiszpani, więc jeśli interesuje Cię takie wyzwanie, zapraszamy!",
+    "name": "Boisko na Sławkowskiej treningi w czwartek",
+    "sport": "Piłka Nożna",
+    "category": "Uprawianie sportu",
+    "ageFrom": 16,
+    "ageTo": 35,
+    "location": "Warszawa, ul. Sławkowska 36",
+    "numberOfMembers": 23,
+    "rate": 5,
+    "dateOfCreation": "2023-01-01",
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  },
+  {
+    "id": 2,
+    "description":
+    "Cześć, jesteśmy zgraną grupą ludzi w średnim wieku, którzy spotykają się raz w tygodniu żeby wspólnie zagrać. Aktualnie poszukujemy chętnych do wspólnej gry, mile widziana wcześniejsza przeszłość siatkarska.",
+    "name": "Siatkarze we Wrocławiu",
+    "sport": "Siatkówka",
+    "category": "Uprawianie sportu",
+    "ageFrom": 32,
+    "ageTo": 54,
+    "location": "Wrocław, ul. Sportowa 34/3E",
+    "dateOfCreation": "2023-01-02",
+    "numberOfMembers": 11,
+    "rate": 4,
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  },
+  {
+    "id": 3,
+    "description":
+    "Duża grupa krakowskich koszykarzy szuka ludzi do wspólnej gry w wieczornych porach. Gramy codziennie, dokładnie 7 razy w tygodniu, jeśli tak jak my jesteś maniakiem kosza, a takie osobistości jak Lebron James, czy Kobe Bryant nie są Ci obce, na pewno się tutaj odnajdziesz.",
+    "name": "Krakowscy Koszykarze",
+    "sport": "Koszykówka",
+    "category": "Uprawianie sportu",
+    "ageFrom": 18,
+    "ageTo": 42,
+    "location": "Kraków, hala 100-lecia Cracovia",
+    "dateOfCreation": "2023-01-03",
+    "numberOfMembers": 57,
+    "rate": 4,
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  },
+  {
+    "id": 4,
+    "description":
+    "Dzień dobry! Grupa energicznych ludzi lubiących aktywne spędzanie czasu. Jeśli 10 kilometrowe lub dłuższe biegi nie są Ci straszne, a od czasu do czasu lubisz wystartować w maratonie to znajdziesz z nami wspólny język. Biegamy 4 razy w tygodniu od 18:00 do 21:00 ",
+    "name": "Morscy biegacze",
+    "sport": "Biegi",
+    "category": "Uprawianie sportu",
+    "dateOfCreation": "2023-01-04",
+    "ageFrom": 10,
+    "ageTo": 80,
+    "location": "Gdańsk, Gdynia, Sopot",
+    "numberOfMembers": 38,
+    "rate": 3,
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  },
+  {
+    "id": 5,
+    "description":
+    "Grupa ludzi w starszym wieku. Gramy w szachy w każdy poniedziałek i czwartek od 16:00 aż do 21:00. Jeśli masz ochotę na jednorazową partię lub rozważasz dołączenie na stałe, serdecznie zapraszamy",
+    "name": "Lubelscy szachiści",
+    "sport": "Szachy",
+    "category": "Uprawianie sportu",
+    "ageFrom": 10,
+    "ageTo": 100,
+    "location": "Lublin, biblioteka uniwersytecka",
+    "dateOfCreation": "2023-01-05",
+    "numberOfMembers": 7,
+    "rate": 4,
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  },
+  {
+    "id": 6,
+    "description":
+    "Cześć, jesteśmy grupą zrzeszającą fanów adrenaliny i entuzjastów skoków spadochronowych. Skaczemy 2 razy w tygodniu, środy i soboty, zapraszamy!",
+    "name": "Extreme Jump",
+    "sport": "Skoki spadochronowe",
+    "category": "Uprawianie sportu",
+    "dateOfCreation": "2023-01-06",
+    "ageFrom": 18,
+    "ageTo": 30,
+    "location": "Kraków, Balice",
+    "numberOfMembers": 13,
+    "rate": 4,
+    "isPublic": true,
+    "członkowie": [],
+    "myGroup": true
+  }
+]

@@ -1,5 +1,11 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
-import { AccountBox, AccountCircle } from "@mui/icons-material";
+import {
+  AccountBox,
+  AccountCircle,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "@mui/icons-material";
 import { Outlet, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 // @ts-ignore
@@ -47,6 +53,31 @@ const Wrapper = () => {
       redirectTo: "sekcja_ekspercka",
     },
   ];
+
+  const footer = () => {
+    return (
+      <Box
+        sx={{
+          backgroundColor: "#6e88d9",
+          display: "flex",
+          height: "10%",
+          borderRadius: "4px",
+          color: "white",
+          fontSize: "28px",
+          fontFamily: "Georgia",
+          fontWeight: 600,
+          alignItems: "center",
+          padding: "0 24px",
+          gap: 30,
+        }}
+      >
+        Follow us on social media, to stay up to date with everything!
+        <Instagram />
+        <Facebook />
+        <Twitter />
+      </Box>
+    );
+  };
 
   const header = () => {
     return (
@@ -109,6 +140,7 @@ const Wrapper = () => {
     <Box sx={{ width: "100%", height: "100%" }}>
       {header()}
       <Outlet />
+      {footer()}
     </Box>
   );
 };

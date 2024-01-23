@@ -31,7 +31,7 @@ const Wrapper = () => {
     | "my_profile"
     | "sekcja_ekspercka"
     | ""
-  >("aktualnosci");
+  >("");
 
   const navigate = useNavigate();
 
@@ -60,7 +60,8 @@ const Wrapper = () => {
         sx={{
           backgroundColor: "#6e88d9",
           display: "flex",
-          height: "10%",
+          maxHeight: "340px",
+          minHeight: "100px",
           borderRadius: "4px",
           color: "white",
           fontSize: "28px",
@@ -133,7 +134,14 @@ const Wrapper = () => {
           ))}
         </Box>
         <Box sx={{ mr: 4, display: "flex", alignItems: "center", gap: 3 }}>
-          <AccountCircle color={"primary"} sx={{ fontSize: "32px" }} />
+          <IconButton
+            onClick={() => {
+              navigate("/my_profile");
+              setCurrentTab("my_profile");
+            }}
+          >
+            <AccountCircle color={"primary"} sx={{ fontSize: "32px" }} />
+          </IconButton>
           <Button
             variant={currentTab === "my_profile" ? "contained" : "outlined"}
             onClick={() => {

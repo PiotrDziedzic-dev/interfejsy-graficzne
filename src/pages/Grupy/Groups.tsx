@@ -155,7 +155,7 @@ const Groups = () => {
       // Filtr liczby członków
       let memberCountMatch = true;
       if (filterOptions.memberCount) {
-        const memberCount = parseInt(group.numerOfMembers, 10);
+        const memberCount = parseInt(group.numberOfMembers, 10);
         switch (filterOptions.memberCount) {
           case "Poniżej 10 członków":
             memberCountMatch = memberCount < 10;
@@ -384,7 +384,7 @@ const Groups = () => {
                   gap: 3,
                 }}
               >
-                <Box sx={{ maxWidth: "600px" }}>{group?.description}</Box>
+                <Box sx={{ maxWidth: "500px" }}>{group?.description}</Box>
                 <Stack>
                   <Box>{group?.isPublic ? "Publiczna" : "Prywatna"}</Box>
                   <Box>{group?.sport}</Box>

@@ -30,6 +30,7 @@ const AddPostDialog: FC<Props> = ({ open, handleClose, addNewPost }) => {
     title: "",
     category: "",
     text: "",
+    komentarze: [],
   });
 
   // Stan dla niestandardowej kategorii i błędów
@@ -67,7 +68,7 @@ const AddPostDialog: FC<Props> = ({ open, handleClose, addNewPost }) => {
       addNewPost(postToAdd); // Dodaj nowy post
       enqueueSnackbar("Post dodany pomyślnie", { variant: "success" });
       handleClose(); // Zamknij dialog
-      setNewPost({ title: "", category: "", text: "" }); // Resetuj stan
+      setNewPost({ title: "", category: "", text: "", komentarze: [] }); // Resetuj stan
       setCustomCategory(""); // Resetuj niestandardową kategorię
     }
   };

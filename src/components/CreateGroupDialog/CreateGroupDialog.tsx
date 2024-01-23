@@ -44,6 +44,7 @@ const CreateGroupDialog: React.FC<Props> = ({
     groupSport: false,
     groupCategory: false,
     groupDescription: false,
+    groupDescriptionLength: false,
     location: false,
   });
 
@@ -71,6 +72,11 @@ const CreateGroupDialog: React.FC<Props> = ({
     }
     if (!location.trim()) {
       newErrors.location = true;
+      hasError = true;
+    }
+
+    if (groupDescription.length > 2000) {
+      newErrors.groupDescriptionLength = true;
       hasError = true;
     }
 
@@ -155,8 +161,14 @@ const CreateGroupDialog: React.FC<Props> = ({
           )}
         </FormControl>
         <TextField
-          error={errors.groupDescription}
-          helperText={errors.groupDescription && "Opis grupy jest wymagany"}
+          error={errors.groupDescription || errors.groupDescriptionLength}
+          helperText={
+            errors.groupDescription || errors.groupDescriptionLength
+              ? errors.groupDescription
+                ? "Opis grupy jest wymagany"
+                : "Maksymalna długość opisu grupy to 2000 znaków"
+              : ""
+          }
           label="Opis Grupy"
           multiline
           minRows={4}
@@ -170,14 +182,30 @@ const CreateGroupDialog: React.FC<Props> = ({
             min={1}
             type="number"
             value={ageFrom}
-            onChange={(e) => setAgeFrom(e.target.value)}
+            onChange={(e) => {
+              if (
+                // @ts-ignore
+                (e.target.value >= 0 && e.target.value < 2000) ||
+                e.target.value == undefined
+              ) {
+                setAgeFrom(e.target.value);
+              }
+            }}
           />
           <Box>do</Box>
           <input
             min={1}
             type="number"
             value={ageTo}
-            onChange={(e) => setAgeTo(e.target.value)}
+            onChange={(e) => {
+              if (
+                // @ts-ignore
+                (e.target.value >= 0 && e.target.value < 2000) ||
+                e.target.value == undefined
+              ) {
+                setAgeTo(e.target.value);
+              }
+            }}
           />
         </Box>
         <TextField

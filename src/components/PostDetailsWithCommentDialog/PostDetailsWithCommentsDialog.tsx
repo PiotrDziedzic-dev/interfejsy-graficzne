@@ -39,7 +39,7 @@ const PostDetailsWithCommentsDialog: FC<Props> = ({
   const handleAddComment = () => {
     // @ts-ignore
     onAddComment({
-      user: currentUser.name + currentUser.surname,
+      user: currentUser.name + " " + currentUser.surname,
       content: commentText,
     });
     enqueueSnackbar("Pomyślnie dodano komentarz", { variant: "success" });
